@@ -25,12 +25,10 @@ npm install
 Open `src/main.jsx` and replace `"your-slug"` with your PitVox partner slug:
 
 ```jsx
-<PitVoxPartnerProvider
-  partnerSlug="my-community"   // ← your slug here
-  apiKey="partner_..."         // ← your API key (for registration features)
-  getSteamId={() => null}      // ← wire up if you add authentication
->
+<PitVoxPartnerProvider partnerSlug="my-community">
 ```
+
+> This template is read-only (leaderboards and competition results from the PitVox CDN). For features that require authentication — like competition registration — see the [Amplify Partner Template](https://github.com/meekysoft/pitvox-partner-template-amplify).
 
 ### 4. Customise
 
