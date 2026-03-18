@@ -55,17 +55,14 @@ npm run dev
 
 ## Deploying
 
-### Amplify Hosting
+This is a static site — deploy it anywhere. Run `npm run build` and serve the `dist/` directory:
 
-This template includes an `amplify.yml` build config. Connect your GitHub repo in the [AWS Amplify console](https://console.aws.amazon.com/amplify/) and it will build and deploy automatically on push.
+- **Vercel** — connect your repo, auto-detected as Vite
+- **Netlify** — connect your repo, build command `npm run build`, publish directory `dist`
+- **Cloudflare Pages** — same as Netlify
+- **GitHub Pages** — use the `peaceiris/actions-gh-pages` action or similar
 
-### Other hosts
-
-Any static host works — Vercel, Netlify, Cloudflare Pages, GitHub Pages, etc. The build output is in `dist/`:
-
-```bash
-npm run build
-```
+> Looking for Steam authentication, user dashboards, and a full AWS backend? See the [Amplify Partner Template](https://github.com/meekysoft/pitvox-partner-template-amplify).
 
 ## What's included
 
