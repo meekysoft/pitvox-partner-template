@@ -192,13 +192,13 @@ export default function Leaderboards() {
 
       <div className="pvx-explorer-controls">
         <div className="pvx-game-tabs">
-          {['evo', 'acc'].map((g) => (
+          {[['evo', 'AC EVO'], ['acc', 'ACC'], ['lmu', 'LMU']].map(([g, label]) => (
             <button
               key={g}
               onClick={() => handleGameChange(g)}
               className={`pvx-game-tab ${gameParam === g ? 'pvx-game-tab--active' : ''}`}
             >
-              {g === 'evo' ? 'AC EVO' : 'ACC'}
+              {label}
             </button>
           ))}
         </div>
